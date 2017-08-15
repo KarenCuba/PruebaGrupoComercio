@@ -1,0 +1,5 @@
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\Pregunta1\bin\Debug\Pregunta1.exe.config
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\Pregunta1\bin\Debug\Pregunta1.exe
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\Pregunta1\bin\Debug\Pregunta1.pdb
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\Pregunta1\obj\Debug\Pregunta1.exe
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\Pregunta1\obj\Debug\Pregunta1.pdb

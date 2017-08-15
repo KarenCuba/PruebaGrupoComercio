@@ -1,0 +1,70 @@
+﻿@model AppWebBancos.Models.OrdenPago
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>OrdenPago</legend>
+    
+            @Html.HiddenFor(model => model.Id)
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Monto)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Monto)
+                @Html.ValidationMessageFor(model => model.Monto)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Moneda)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Moneda)
+                @Html.ValidationMessageFor(model => model.Moneda)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.estado)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.estado)
+                @Html.ValidationMessageFor(model => model.estado)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.FechaPago)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.FechaPago)
+                @Html.ValidationMessageFor(model => model.FechaPago)
+            </div>
+    
+            <p>
+                <input type="submit" value="Save" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

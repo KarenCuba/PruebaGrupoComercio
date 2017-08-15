@@ -1,0 +1,97 @@
+﻿@using AppWebBancos.Models
+
+@model Sucursal
+
+@{
+    ViewBag.Title = "ListarSucursalXBanco";
+
+   var grid = new WebGrid(Model.lstSucursal, canPage: false, canSort: false);
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listar Sucursal Por Banco</title>
+</head>
+<body>
+    <p>
+        @using (Html.BeginForm("ListarSucursalXBanco", "Sucursal", FormMethod.Post, new { @id = "BancoForm" }))
+        { 
+            @Html.LabelFor(x=>x.ListaBanco)
+            @Html.DropDownListFor(x => x.ListaBanco, Model.ListaBanco, new { @id = "ListaBanco", @Name="Id" })
+        }
+        @if (Model.lstSucursal != null)
+        {
+          
+           @grid.GetHtml(
+                            tableStyle: "webgrid-table",
+                            headerStyle: "webgrid-head",
+                            alternatingRowStyle: "webgrid-alternating-row",
+                            selectedRowStyle: "webgrid-selected-row",
+                
+                            columns: grid.Columns(
+                                      grid.Column(columnName: "Id", header: "Id", style: "webgrid-column-sucursal"),
+                                grid.Column(columnName: "Nombre", header: "Nombre"),
+                                grid.Column(columnName: "Direccion", header: "Direccion"),
+                                grid.Column(columnName: "FechaRegistro", header: "Fecha de Registro", format: x => x.FechaRegistro != null ? x.FechaRegistro.ToString("dd/MM/yyyy") : ""),
+                                grid.Column(columnName: "IdBanco", header: "Id Banco")
+                    
+           ))
+            
+        }
+        else
+        {
+                <p>No hay datos</p>            
+        }
+
+    @section scripts
+    {
+
+        <script type="text/javascript">
+            $(function () {
+
+                $("#ListaBanco").change(function () {
+
+                    $("#BancoForm").submit();
+
+                });
+
+            });
+        </script>
+    }
+
+    @section style
+    {
+
+        <style type="text/css">
+            .webgrid-table {
+                margin: 4px;
+                width: 100%;
+                background-color: #FCFCFC;
+            }
+
+            .webgrid-head {
+                background-color: #C1D4E6;
+                font-weight: bold;
+                color: black;
+            }
+
+            .webgrid-alternating-row {
+                background-color: #E4E9F5;
+                color: #000;
+            }
+
+            .webgrid-selected-row {
+                background-color: #389DF5;
+            }
+
+            .webgrid-column-sucursal {
+                width: 150px;
+            }
+        </style>
+    }
+</body>
+</html>

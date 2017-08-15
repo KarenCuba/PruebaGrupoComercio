@@ -1,0 +1,5 @@
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\ChangeString\bin\Debug\ChangeString.dll
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\ChangeString\bin\Debug\ChangeString.pdb
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\ChangeString\obj\Debug\ChangeString.csprojResolveAssemblyReference.cache
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\ChangeString\obj\Debug\ChangeString.dll
+c:\users\karen cuba\documents\visual studio 2013\Projects\ChangeString\ChangeString\obj\Debug\ChangeString.pdb

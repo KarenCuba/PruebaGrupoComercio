@@ -1,0 +1,56 @@
+﻿@model AppWebBancos.Models.OrdenPago
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Eliminar</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <fieldset>
+        <legend>OrdenPago</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Monto)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Monto)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Moneda)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Moneda)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.estado)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.estado)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.FechaPago)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.FechaPago)
+        </div>
+    </fieldset>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        <p>
+            <input type="submit" value="Delete" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    }
+
+</body>
+</html>

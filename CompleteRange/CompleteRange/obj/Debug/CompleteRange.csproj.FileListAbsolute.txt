@@ -1,0 +1,6 @@
+c:\users\karen cuba\documents\visual studio 2013\Projects\CompleteRange\CompleteRange\bin\Debug\CompleteRange.exe.config
+c:\users\karen cuba\documents\visual studio 2013\Projects\CompleteRange\CompleteRange\bin\Debug\CompleteRange.exe
+c:\users\karen cuba\documents\visual studio 2013\Projects\CompleteRange\CompleteRange\bin\Debug\CompleteRange.pdb
+c:\users\karen cuba\documents\visual studio 2013\Projects\CompleteRange\CompleteRange\obj\Debug\CompleteRange.csprojResolveAssemblyReference.cache
+c:\users\karen cuba\documents\visual studio 2013\Projects\CompleteRange\CompleteRange\obj\Debug\CompleteRange.exe
+c:\users\karen cuba\documents\visual studio 2013\Projects\CompleteRange\CompleteRange\obj\Debug\CompleteRange.pdb

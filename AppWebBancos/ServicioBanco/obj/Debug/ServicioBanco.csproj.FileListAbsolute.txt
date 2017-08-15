@@ -1,0 +1,5 @@
+C:\Users\Karen Cuba\Documents\Visual Studio 2013\Projects\AppWebBancos\ServicioBanco\bin\ServicioBanco.dll.config
+C:\Users\Karen Cuba\Documents\Visual Studio 2013\Projects\AppWebBancos\ServicioBanco\bin\ServicioBanco.dll
+C:\Users\Karen Cuba\Documents\Visual Studio 2013\Projects\AppWebBancos\ServicioBanco\bin\ServicioBanco.pdb
+C:\Users\Karen Cuba\Documents\Visual Studio 2013\Projects\AppWebBancos\ServicioBanco\obj\Debug\ServicioBanco.dll
+C:\Users\Karen Cuba\Documents\Visual Studio 2013\Projects\AppWebBancos\ServicioBanco\obj\Debug\ServicioBanco.pdb
